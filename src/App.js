@@ -1,26 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Greeting1 from './Greeting1'
+import Greetings2 from './Greetings2'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div>
+      <Greeting1 firstName = "John" lasName = "Smith" />
+      <Greetings2 firstName = "Bill" lastName = "Gates" />
+      
+  </div>
+);
 
 export default App;
